@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/header.css">
+    <link rel="stylesheet" href="estilos/hover.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/76ed9a320f.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Magik</title>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+</head>
+<body class="bg-slate-100 dark:text-white dark:bg-slate-800">
+    <header class="drop-shadow-sm fixed left-0 right-0 z-10">
+        <nav class="bg-slate-100 dark:bg-slate-800 p-3 flex justify-between font-bold ">
+            <div class="flex items-center">
+                <button id="button-tema" class="px-2">Cambiar color</button> 
+                <span>|</span>
+                <div class="flex items-center mt-1 px-2">
+                    <a href="">
+                        <i class="px-1 fa-brands fa-instagram fa-lg hover:text-yellow-400 hover:animate-bounce"></i>
+                    </a>
+                    <a href="">
+                        <i class="px-1 fa-brands fa-facebook fa-lg hover:text-yellow-400 hover:animate-bounce"></i>
+                    </a>
+                    <a href="">
+                        <i class="px-1 fa-brands fa-twitter fa-lg hover:text-yellow-400 hover:animate-bounce"></i>
+                    </a>
+                    <a href="">
+                        <i class="px-1 fa-brands fa-youtube fa-lg hover:text-yellow-400 hover:animate-bounce"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <a class="p-3 hvr-sweep-to-bottom" href="">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="text-center h-screen flex flex-col justify-center items-center bg-gradient-to-r from-violet-900 to-fuchsia-900 text-white">
+            <h1 class="py-5 text-8xl font-bold" data-aos="fade-down" style="text-shadow: 1px 1px 3px #000">
+                Magik IA
+            </h1>
+            <h2 class="text-5xl" style="text-shadow: 1px 1px 3px #000" data-aos="fade-down">
+                La nueva inteligencia artificial que cambiara la forma de ver la educación
+            </h2>
+            <p class="text-3xl mt-10" style="text-shadow: 1px 1px 3px #000" data-aos="fade-down">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas esse, eveniet laborum suscipit 
+                mollitia harum enim explicabo consequuntur 
+            </p>
+        </section>
+        <section class="px-4 pt-5 text-center h-screen flex justify-around items-center">
+            <div data-aos="fade-down">
+                <h3 class="text-3xl font-extrabold text-yellow-400">
+                    Sobre el evento
+                </h3>
+                <p class="text-lg">
+                    Quickly design and customize responsive mobile-first sites with
+                    Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and 
+                    mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+                </p>
+            </div>
+            <img class="w-2/4 mx-auto rounded-md" data-aos="fade-down" src="imagenes/inteligencia-artificial.jpeg" alt="">
+        </section>
+        <section class="h-full bg-slate-200 px-4 pt-5 text-center flex flex-col items-center gap-10 dark:bg-slate-700">
+            <h3 class="text-3xl text-yellow-500 font-bold" data-aos="fade-down">
+                Detalles del evento
+            </h3>
+            <div class="flex flex-col gap-10">
+                <article data-aos="fade-right" class="max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-yellow-500">¿Cuándo es?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    </div>
+                </article>
+                <article data-aos="fade-left" class="max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-yellow-500">¿Dónde es?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    </div>
+                </article>
+                <article data-aos="fade-right" class="mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-yellow-500">¿Cuál es el valor de la entrada?</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="index.js"></script>
+    <script >AOS.init();</script>
+</body>
+</html>
