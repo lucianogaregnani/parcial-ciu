@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,42 +19,39 @@
 </head>
 <body class="bg-slate-100 dark:text-white dark:bg-slate-800">
     <header class="drop-shadow-sm fixed left-0 right-0 z-10">
-        <nav class="bg-slate-100 dark:bg-slate-800 p-3 flex justify-between font-bold ">
+        <nav class="bg-slate-100 dark:bg-slate-800 p-5 flex justify-between font-bold ">
             <div class="flex items-center">
                 <button id="button-tema" class="px-2">Cambiar color</button> 
                 <span>|</span>
                 <div class="flex items-center mt-1 px-2">
                     <a href="">
-                        <i class="px-1 fa-brands fa-instagram fa-lg hover:text-pink-600 hover:animate-bounce"></i>
+                        <i class="px-1 fa-brands fa-instagram fa-lg hover:text-pink-600"></i>
                     </a>
                     <a href="">
-                        <i class="px-1 fa-brands fa-facebook fa-lg hover:text-blue-800 hover:animate-bounce"></i>
+                        <i class="px-1 fa-brands fa-facebook fa-lg hover:text-blue-800"></i>
                     </a>
                     <a href="">
-                        <i class="px-1 fa-brands fa-twitter fa-lg hover:text-sky-400 hover:animate-bounce"></i>
+                        <i class="px-1 fa-brands fa-twitter fa-lg hover:text-sky-400"></i>
                     </a>
                     <a href="">
-                        <i class="px-1 fa-brands fa-youtube fa-lg hover:text-red-600 hover:animate-bounce"></i>
+                        <i class="px-1 fa-brands fa-youtube fa-lg hover:text-red-600"></i>
                     </a>
                 </div>
             </div>
             <div>
-                <a class="p-2 hvr-sweep-to-bottom bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] " href="">Registrarse</a>
+                <a class="p-3 bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)]" href="">Registrarse</a>
             </div>
         </nav>
     </header>
     <main>
-        <section class="text-center h-screen flex flex-col justify-center items-center bg-gradient-to-r from-violet-900 to-fuchsia-900 text-white">
-            <h1 class="py-5 text-8xl font-bold" data-aos="fade-down" style="text-shadow: 1px 1px 3px #000">
-                Magik IA
-            </h1>
-            <h2 class="text-5xl" style="text-shadow: 1px 1px 3px #000" data-aos="fade-down">
-                La nueva inteligencia artificial que cambiara la forma de ver la educación
-            </h2>
-            <p class="text-3xl mt-10" style="text-shadow: 1px 1px 3px #000" data-aos="fade-down">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas esse, eveniet laborum suscipit 
-                mollitia harum enim explicabo consequuntur 
-            </p>
+        <section class="relative bg-[url('/imagenes/ia.jpg')] bg-no-repeat bg-center bg-cover before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-90">
+            <div class="relative z-1 h-screen flex flex-col justify-center items-center text-white">
+                <h1 class="text-7xl mb-5 font-bold mt-20">Magik <span class="text-yellow-500">IA</span></h1>
+                <h2 class="text-4xl ">La inteligencia artificial que se convertira en tu <span class="typed text-yellow-500"></span></h2>
+                <button class="absolute bottom-10 hover:text-yellow-500" id="cambio-seccion">
+                    <i class="text-4xl fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
         </section>
         <section class="px-4 pt-5 text-center h-screen flex justify-around items-center">
             <div data-aos="fade-down">
@@ -100,11 +97,11 @@
                 </article>
             </div>
         </section>
-        <section class="h-screen px-4 pt-5 text-center">
+        <section class="px-4 pt-5 text-center">
             <h3 class="text-3xl text-yellow-500 font-bold mb-10" data-aos="fade-down">
                 Expositores
             </h3>
-            <div class="grid grid-cols-3 ">
+            <div class="grid grid-cols-3">
                 <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
                     <img class=" w-full" src="/imagenes/personas.jpg" alt="" />                    
                     <div class="p-5">
@@ -143,9 +140,37 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="flex justify-around items-center py-5 bg-slate-200 dark:bg-slate-700">
+        <div class="text-center">
+            <h4 class="text-2xl mb-2 border-b-2 border-yellow-500 font-bold">Contacto</h4>
+            <p class="text-1xl">magikia@gmail.com</p>
+            <p class="text-1xl">+54 1167346784</p>
+        </div>
+        <div class="flex flex-col gap-5">
+            <h4 class="text-center text-2xl mb-2 border-b-2 border-yellow-500 font-bold">Veni a conocernos!</h4>
+            <iframe class="border rounded-md w-96 h-60 drop-shadow-xl" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.974952103117!2d-58.6556632!3d-34.579025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbea8a3be51a3%3A0xc73b187e245ea9fc!2sMagik!5e0!3m2!1ses!2sar!4v1683987502151!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
+        <div class="flex items-center flex-col mt-1 px-2">
+            <h4 class="text-2xl mb-2 border-b-2 border-yellow-500 w-full text-center font-bold">Redes</h4>
+            <div>
+                <a href="">
+                    <i class="px-1 fa-brands fa-instagram text-3xl hover:text-pink-600"></i>
+                </a>
+                <a href="">
+                    <i class="px-1 fa-brands fa-facebook text-3xl hover:text-blue-800"></i>
+                </a>
+                <a href="">
+                    <i class="px-1 fa-brands fa-twitter text-3xl hover:text-sky-400"></i>
+                </a>
+                <a href="">
+                    <i class="px-1 fa-brands fa-youtube text-3xl hover:text-red-600"></i>
+                </a>
+            </div>
+        </div>
     </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>AOS.init();</script>
     <script src="index.js"></script>
-    <script >AOS.init();</script>
 </body>
 </html>
