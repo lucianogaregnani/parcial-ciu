@@ -1,11 +1,5 @@
 
-const botonDeTema = document.getElementById("button-tema")
-const html = document.querySelector("html")
-
-botonDeTema.addEventListener('click', () => {
-    html.classList.toggle('dark')
-})
-
+// Activa el efecto de escribir en el hero image
 const typed = new Typed('.typed', {
     strings: ['amiga', 'compañera', 'familia'],
     typeSpeed: 80,
@@ -14,7 +8,24 @@ const typed = new Typed('.typed', {
     cursorChar: '_'
 })
 
-const seccionExpositores = document.getElementById('detalles')
+
+// Activa el botón que cambia el tema la página de claro a oscuro o al revés.
+function activarBotonDeTema() {
+    const botonDeTema = document.getElementById("button-tema")
+    const elementoIcono = document.getElementById("icono-tema")
+    const html = document.querySelector("html")
+
+    botonDeTema.addEventListener('click', () => {
+        html.classList.toggle('dark')
+
+        if(html.classList.contains('dark'))
+            elementoIcono.classList.value = 'fa-sharp fa-solid fa-sun text-yellow-400 text-3xl'
+        else 
+            elementoIcono.classList.value = 'fa-sharp fa-solid fa-moon text-slate-600 text-3xl'
+                                            
+    })
+}
+
 const imagenes = [
     {
         url:'ia2.jpeg', 
@@ -34,6 +45,16 @@ const imagenes = [
     }
 ]
 
-imagenes.forEach(({url, clases}) => {
-    seccionExpositores.innerHTML += `<img src="/imagenes/detalles-del-evento/${url}" class="${clases} absolute w-44 rounded-md">`
-})
+function agregarImagenesDeFondo() {
+    // Agrega las imagenes de fondo que están en la sección de 'detalles del evento'
+    const seccionExpositores = document.getElementById('detalles')
+    
+    imagenes.forEach(({url, clases}) => {
+        seccionExpositores.innerHTML += `<img src="/imagenes/detalles-del-evento/${url}" class="${clases} absolute w-44 rounded-md">`
+    })
+}
+
+
+
+activarBotonDeTema()
+agregarImagenesDeFondo()
