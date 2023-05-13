@@ -16,8 +16,8 @@
     </script>
 </head>
 <body class="bg-slate-100 dark:text-gray-400 dark:bg-slate-800">
-    <header class="drop-shadow-sm">
-        <nav class="bg-slate-100 dark:bg-slate-800 p-5 flex justify-between font-bold ">
+    <header class=" drop-shadow-sm ">
+        <nav class="bg-slate-100 dark:bg-slate-800 p-5 flex md:justify-between font-bold">
             <div class="flex items-center">
                 <button id="button-tema" class="px-2">Cambiar color</button> 
                 <span>|</span>
@@ -36,32 +36,32 @@
                     </a>
                 </div>
             </div>
-            <div class="">
+            <div>
                 <a href="register.html" class="hover:bg-green-200 p-3 bg-white border border-green-400 shadow-[5px_4px_0px_rgb(74,222,128)] 
-                        dark:bg-slate-800 dark:text-white dark:border-sky-600 dark:hover:bg-sky-400 dark:shadow-[5px_4px_0px_rgb(2,132,199)]" href="">
+                        dark:bg-slate-800 dark:text-white dark:border-sky-600 dark:hover:bg-sky-400 dark:shadow-[5px_4px_0px_rgb(2,132,199)]">
                     Registrarse
                 </a>
             </div>
         </nav>
     </header>
     <main>
-        <form class="mx-auto py-20 m-10 w-2/4 flex flex-col items-center justify-center bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
+        <form action="mailto:gabriel.molina@unahur.edu.ar" class="mx-auto py-20 m-10 md:w-2/4 flex flex-col items-center justify-center bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
                     dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)]">
-            <div class="mb-6 w-2/4">
+            <div class="mb-6 w-3/4 md:w-2/4">
                 <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white border-b-2 border-yellow-500">Email</label>
-                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="nombre@ejemplo.com" required>
+                <input name="email" type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="nombre@ejemplo.com" required>
             </div>
-            <div class="mb-6 w-2/4">
+            <div class="mb-6 w-3/4 md:w-2/4">
                 <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white border-b-2 border-yellow-500">Nombre</label>
-                <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Ingrese su nombre" required>
+                <input name="nombre" type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Ingrese su nombre" required>
             </div>
-            <div class="mb-6 w-2/4">
+            <div class="mb-6 w-3/4 md:w-2/4">
                 <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white border-b-2 border-yellow-500">Contraseña</label>
-                <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Ingrese la contraseña" required>
+                <input name="contraseña" type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Ingrese la contraseña" required>
             </div>
-            <div class="mb-6 w-2/4">
+            <div class="mb-6 w-3/4 md:w-2/4">
                 <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white border-b-2 border-yellow-500">Repita la contraseña</label>
-                <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Ingrese la contraseña" required>
+                <input name="contraseña" type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Ingrese la contraseña" required>
             </div> 
             <button type="submit" class="p-3 bg-white border border-slate-900 shadow-[5px_4px_0px_rgb(0,0,0)] 
             dark:bg-slate-800 dark:text-white dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)]
@@ -70,19 +70,7 @@
             </button>
         </form>
     </main>
-    <footer class="flex justify-around items-center py-5 bg-slate-200 dark:bg-slate-700 dark:text-white">
-        <a class="font-bold" href="index.html">
-            <div class="py-3 px-6 bg-white border border-slate-900 shadow-[5px_4px_0px_rgb(0,0,0)] 
-                        dark:bg-slate-800 dark:text-white dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)]
-                        active:shadow-[3px_2px_0px_rgb(0,0,0)] dark:active:shadow-[3px_2px_0px_rgb(255,255,255)]" data-aos="fade-right">
-                <i class="fa-solid fa-arrow-left"></i>
-                Volver
-            </div>
-        </a>
-        <div class="flex flex-col gap-5" data-aos="fade-right">
-            <h4 class="text-center text-2xl mb-2 border-b-2 border-yellow-500 font-bold">Veni a conocernos!</h4>
-            <iframe class="border rounded-md w-96 h-60 drop-shadow-xl" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.974952103117!2d-58.6556632!3d-34.579025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbea8a3be51a3%3A0xc73b187e245ea9fc!2sMagik!5e0!3m2!1ses!2sar!4v1683987502151!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>    
+    <footer class="flex flex-col gap-10 md:flex-row justify-around items-center py-5 bg-slate-200 dark:bg-slate-700 dark:text-white">
         <div class="flex items-center flex-col mt-1 px-2 text-center gap-10" data-aos="fade-right">
             <div>
                 <h4 class="text-2xl mb-2 border-b-2 border-yellow-500 w-full text-center font-bold">Redes</h4>
@@ -105,6 +93,18 @@
                 <p class="text-1xl">+54 1167346784</p>
             </div>
         </div>
+        <div class="flex flex-col gap-5" data-aos="fade-right">
+            <h4 class="text-center text-2xl mb-2 border-b-2 border-yellow-500 font-bold">Veni a conocernos!</h4>
+            <iframe class="border rounded-md w-96 h-60 drop-shadow-xl" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.974952103117!2d-58.6556632!3d-34.579025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbea8a3be51a3%3A0xc73b187e245ea9fc!2sMagik!5e0!3m2!1ses!2sar!4v1683987502151!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
+        <a class="font-bold" href="index.html">
+            <div class="py-3 px-6 bg-white border border-slate-900 shadow-[5px_4px_0px_rgb(0,0,0)] 
+                        dark:bg-slate-800 dark:text-white dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)]
+                        active:shadow-[3px_2px_0px_rgb(0,0,0)] dark:active:shadow-[3px_2px_0px_rgb(255,255,255)]">
+                <i class="fa-solid fa-arrow-left"></i>
+                Volver
+            </div>
+        </a>
     </footer>
     
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
