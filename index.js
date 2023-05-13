@@ -1,8 +1,9 @@
+
 const botonDeTema = document.getElementById("button-tema")
-const htlm = document.querySelector("html")
+const html = document.querySelector("html")
 
 botonDeTema.addEventListener('click', () => {
-    htlm.classList.toggle('dark')
+    html.classList.toggle('dark')
 })
 
 const typed = new Typed('.typed', {
@@ -13,13 +14,26 @@ const typed = new Typed('.typed', {
     cursorChar: '_'
 })
 
-const botonCambioDeSeccion = document.getElementById('cambio-seccion')
-const coordenadasDeSeccion = botonCambioDeSeccion.getBoundingClientRect()
-const coordenadaMediaY = (coordenadasDeSeccion.bottom + coordenadasDeSeccion.top) / 2
+const seccionExpositores = document.getElementById('detalles')
+const imagenes = [
+    {
+        url:'ia2.jpeg', 
+        clases: 'top-2/4 left-64 rounded-md origin-top-left rotate-12'
+    }, 
+    {
+        url: 'virbela1.jpg',
+        clases: 'top-1/4 right-64 rounded-md origin-bottom rotate-12'
+    }, 
+    {
+        url:'virbela2.png', 
+        clases: 'top-3/4 right-64 rounded-md origin-center -rotate-12'
+    },
+    {
+        url:'ia3.jpg', 
+        clases: 'top-20 left-64 rounded-md origin-center -rotate-12'
+    }
+]
 
-botonCambioDeSeccion.addEventListener('click', () => {
-    window.scrollTo({
-        top: coordenadaMediaY,
-        behavior: 'smooth'
-    })
+imagenes.forEach(({url, clases}) => {
+    seccionExpositores.innerHTML += `<img src="/imagenes/detalles-del-evento/${url}" class="${clases} absolute w-44 rounded-md">`
 })

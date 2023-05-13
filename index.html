@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/header.css">
-    <link rel="stylesheet" href="estilos/hover.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/76ed9a320f.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,9 +15,9 @@
         }
     </script>
 </head>
-<body class="bg-slate-100 dark:text-white dark:bg-slate-800">
-    <header class="drop-shadow-sm fixed left-0 right-0 z-10">
-        <nav class="bg-slate-100 dark:bg-slate-800 p-5 flex justify-between font-bold ">
+<body id="inicio" class="bg-slate-100 dark:text-gray-400 dark:bg-slate-800">
+    <header class="drop-shadow-sm fixed left-0 right-0 z-20">
+        <nav class="bg-slate-100 dark:bg-slate-800 p-5 flex md:justify-between font-bold">
             <div class="flex items-center">
                 <button id="button-tema" class="px-2">Cambiar color</button> 
                 <span>|</span>
@@ -39,60 +37,82 @@
                 </div>
             </div>
             <div>
-                <a class="p-3 bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)]" href="">Registrarse</a>
+                <a href="register.html" class="hover:bg-green-200 p-3 bg-white border border-green-400 shadow-[5px_4px_0px_rgb(74,222,128)] 
+                        dark:bg-slate-800 dark:text-white dark:border-sky-600 dark:hover:bg-sky-400 dark:shadow-[5px_4px_0px_rgb(2,132,199)]">
+                    Registrarse
+                </a>
             </div>
         </nav>
     </header>
     <main>
-        <section class="relative bg-[url('/imagenes/ia.jpg')] bg-no-repeat bg-center bg-cover before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-90">
+        <section class="relative bg-[url('/imagenes/ia.jpg')] bg-no-repeat bg-center bg-cover before:content-[''] 
+                        before:absolute before:inset-0 before:bg-black before:opacity-90 text-center">
             <div class="relative z-1 h-screen flex flex-col justify-center items-center text-white">
                 <h1 class="text-7xl mb-5 font-bold mt-20">Magik <span class="text-yellow-500">IA</span></h1>
                 <h2 class="text-4xl ">La inteligencia artificial que se convertira en tu <span class="typed text-yellow-500"></span></h2>
-                <button class="absolute bottom-10 hover:text-yellow-500" id="cambio-seccion">
+                <a class="cursor-pointer absolute bottom-10 hover:text-yellow-500" href="#sobre-el-evento">
                     <i class="text-4xl fa-solid fa-chevron-down"></i>
-                </button>
+                </a>
             </div>
         </section>
-        <section class="px-4 pt-5 text-center h-screen flex justify-around items-center">
+        <section id="sobre-el-evento" class="h-screen text-center h-screen flex flex-col md:flex-row md:px-3 justify-center items-center">
             <div data-aos="fade-down">
-                <h3 class="text-3xl font-extrabold text-yellow-400">
+                <h3 class="text-4xl md:text-3xl font-bold text-yellow-400 mb-5">
                     Sobre el evento
                 </h3>
-                <p class="text-lg">
+                <p class="text-3xl md:text-lg">
                     Quickly design and customize responsive mobile-first sites with
                     Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and 
                     mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
                 </p>
             </div>
-            <img class="w-2/4 mx-auto rounded-md" data-aos="fade-down" src="imagenes/inteligencia-artificial.jpeg" alt="">
+            <img class="md:w-2/4 mx-auto rounded-md" data-aos="fade-down" src="imagenes/inteligencia-artificial.jpeg" alt="">
         </section>
-        <section class="h-full bg-slate-200 px-4 pt-5 text-center flex flex-col items-center gap-10 dark:bg-slate-700">
+        <section id="detalles" class="relative h-full bg-slate-200 px-4 pt-5 text-center flex flex-col items-center gap-10 dark:bg-slate-700">
             <h3 class="text-3xl text-yellow-500 font-bold" data-aos="fade-down">
                 Detalles del evento
             </h3>
             <div class="flex flex-col gap-10">
-                <article data-aos="fade-right" class="max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
+                <article data-aos="fade-right" class="relative z-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
+                                                    dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">¿Cuándo es?</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
+                                ¿Cuándo es?
+                            </h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse 
+                            chronological order.
+                        </p>
                     </div>
                 </article>
-                <article data-aos="fade-left" class="max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
+                <article data-aos="fade-left" class="relative z-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
+                                                    dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">¿Dónde es?</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
+                                ¿Dónde es?
+                            </h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Here are the biggest enterprise technology acquisitions of 2021 so far, 
+                            in reverse chronological order.
+                        </p>
                     </div>
                 </article>
-                <article data-aos="fade-right" class="mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
+                <article data-aos="fade-right" class="relative z-10 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
+                                                    dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">¿Cuál es el valor de la entrada?</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
+                                ¿Cuál es el valor de la entrada?
+                            </h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Here are the biggest enterprise technology acquisitions of 2021 so far,
+                            in reverse chronological order.
+                        </p>
                     </div>
                 </article>
             </div>
@@ -101,58 +121,92 @@
             <h3 class="text-3xl text-yellow-500 font-bold mb-10" data-aos="fade-down">
                 Expositores
             </h3>
-            <div class="grid grid-cols-3">
-                <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
-                    <img class=" w-full" src="/imagenes/personas.jpg" alt="" />                    
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
+                                                    dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
+                    <img class=" w-full" src="/imagenes/expositores/persona1.jpg" alt="" />                    
                     <div class="p-5">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">¿Cuál es el valor de la entrada?</h5>                       
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
+                            ¿Cuál es el valor de la entrada?
+                        </h5>                       
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Here are the biggest enterprise technology acquisitions of 2021 so far, 
+                            in reverse chronological order.
+                        </p>
                     </div>
                 </article>
-                <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
-                    <img class=" w-full" src="/imagenes/persona2.jpg" alt="" />                   
+                <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
+                                                    dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
+                    <img class=" w-full" src="/imagenes/expositores/persona2.jpg" alt="" />                   
                     <div class="p-5">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">¿Cuál es el valor de la entrada?</h5>                        
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
+                            ¿Cuál es el valor de la entrada?
+                        </h5>                        
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Here are the biggest enterprise technology
+                            acquisitions of 2021 so far, in reverse chronological order.
+                        </p>
                     </div>
                 </article>
-                <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
-                    <img class="w-full" src="/imagenes/persona3.jpg" alt="" />                   
+                <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
+                                                    dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
+                    <img class="w-full" src="/imagenes/expositores/persona3.jpg" alt="" />                   
                     <div class="p-5">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">¿Cuál es el valor de la entrada?</h5>                        
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
+                            ¿Cuál es el valor de la entrada?
+                        </h5>                        
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Here are the biggest enterprise technology acquisitions of 2021 so far,
+                            in reverse chronological order.
+                        </p>
                     </div>
                 </article>
-                <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
-                    <img class=" w-full" src="/imagenes/persona4.jpeg" alt="" />                   
+                <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
+                                                    dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
+                    <img class=" w-full" src="/imagenes/expositores/persona4.jpeg" alt="" />                   
                     <div class="p-5">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">¿Cuál es el valor de la entrada?</h5>                        
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
+                            ¿Cuál es el valor de la entrada?
+                        </h5>                        
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Here are the biggest enterprise technology acquisitions of 2021 so far, 
+                            in reverse chronological order.
+                        </p>
                     </div>
                 </article>
-                <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
-                    <img class=" w-full" src="/imagenes/persona5.jpg" alt="" />                   
+                <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
+                                                    dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
+                    <img class=" w-full" src="/imagenes/expositores/persona5.jpg" alt="" />                   
                     <div class="p-5">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">¿Cuál es el valor de la entrada?</h5>                        
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
+                            ¿Cuál es el valor de la entrada?
+                        </h5>                        
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Here are the biggest enterprise technology acquisitions of 2021 so far
+                            , in reverse chronological order.
+                        </p>
                     </div>
                 </article>
+                <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
+                                                    dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
+                    <img class=" w-full" src="/imagenes/expositores/persona5.jpg" alt="" />                   
+                    <div class="p-5">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
+                            ¿Cuál es el valor de la entrada?
+                        </h5>                        
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            Here are the biggest enterprise technology acquisitions of 2021 so far
+                            , in reverse chronological order.
+                        </p>
+                    </div>
+                </article>                
             </div>
         </section>
     </main>
-    <footer class="flex justify-around items-center py-5 bg-slate-200 dark:bg-slate-700">
-        <div class="text-center">
-            <h4 class="text-2xl mb-2 border-b-2 border-yellow-500 font-bold">Contacto</h4>
-            <p class="text-1xl">magikia@gmail.com</p>
-            <p class="text-1xl">+54 1167346784</p>
-        </div>
-        <div class="flex flex-col gap-5">
-            <h4 class="text-center text-2xl mb-2 border-b-2 border-yellow-500 font-bold">Veni a conocernos!</h4>
-            <iframe class="border rounded-md w-96 h-60 drop-shadow-xl" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.974952103117!2d-58.6556632!3d-34.579025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbea8a3be51a3%3A0xc73b187e245ea9fc!2sMagik!5e0!3m2!1ses!2sar!4v1683987502151!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>    
-        <div class="flex items-center flex-col mt-1 px-2">
-            <h4 class="text-2xl mb-2 border-b-2 border-yellow-500 w-full text-center font-bold">Redes</h4>
+    <footer class="flex flex-col gap-10 md:flex-row justify-around items-center py-5 bg-slate-200 dark:bg-slate-700 dark:text-white">
+        <div class="flex items-center flex-col mt-1 px-2 text-center gap-10" data-aos="fade-right">
             <div>
+                <h4 class="text-2xl mb-2 border-b-2 border-yellow-500 w-full text-center font-bold">Redes</h4>
                 <a href="">
                     <i class="px-1 fa-brands fa-instagram text-3xl hover:text-pink-600"></i>
                 </a>
@@ -166,7 +220,24 @@
                     <i class="px-1 fa-brands fa-youtube text-3xl hover:text-red-600"></i>
                 </a>
             </div>
+            <div>
+                <h4 class="text-2xl mb-2 border-b-2 border-yellow-500 font-bold">Contacto</h4>
+                <p class="text-1xl">magikia@gmail.com</p>
+                <p class="text-1xl">+54 1167346784</p>
+            </div>
         </div>
+        <div class="flex flex-col gap-5" data-aos="fade-right">
+            <h4 class="text-center text-2xl mb-2 border-b-2 border-yellow-500 font-bold">Veni a conocernos!</h4>
+            <iframe class="border rounded-md w-96 h-60 drop-shadow-xl" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.974952103117!2d-58.6556632!3d-34.579025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbea8a3be51a3%3A0xc73b187e245ea9fc!2sMagik!5e0!3m2!1ses!2sar!4v1683987502151!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
+        <a class="font-bold" href="#inicio">
+            <div class="py-3 px-6 bg-white border border-slate-900 shadow-[5px_4px_0px_rgb(0,0,0)] 
+                        dark:bg-slate-800 dark:text-white dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)]
+                        active:shadow-[3px_2px_0px_rgb(0,0,0)] dark:active:shadow-[3px_2px_0px_rgb(255,255,255)]">
+                <i class="fa-solid fa-arrow-left"></i>
+                Volver
+            </div>
+        </a>
     </footer>
     
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
