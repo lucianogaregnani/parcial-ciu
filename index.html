@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="font.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/76ed9a320f.js" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,400;1,600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Magik</title>
     <script>
         tailwind.config = {
-            darkMode: 'class',
+            darkMode: 'class'
         }
     </script>
+
+    <title>Magik</title>
+    
 </head>
 <body id="inicio" class="bg-slate-100 dark:text-gray-400 dark:bg-slate-800">
-    <header class=" drop-shadow-sm fixed left-0 right-0 z-20">
-        <nav class="bg-slate-100 dark:bg-slate-800 p-5 flex md:justify-between font-bold">
+    <header class="drop-shadow-sm fixed w-screen z-20">
+        <nav class="bg-slate-100 dark:bg-slate-800 p-5 flex justify-between font-bold">
             <div class="flex items-center">
                 <button id="button-tema" class="px-2">
                     <i class="fa-sharp fa-solid fa-moon text-slate-600 text-3xl"></i>
@@ -53,8 +55,8 @@
         <section class="relative bg-[url('imagenes/ia.jpeg')] bg-no-repeat bg-center bg-cover before:content-[''] 
                         before:absolute before:inset-0 before:bg-black before:opacity-90 text-center">
             <div class="relative z-1 h-screen flex flex-col justify-center items-center text-white">
-                <h1 class="text-7xl mb-5 font-bold mt-20">Magik <span class="text-yellow-500">IA</span></h1>
-                <h2 class="text-4xl ">La inteligencia artificial que se convertira en tu <span class="typed text-yellow-500"></span></h2>
+                <h1 class="text-7xl mb-5 font-bold mt-20 ">Magik <span class="text-yellow-500">IA</span></h1>
+                <h2 class="text-4xl">La inteligencia artificial que se convertira en tu <span class="typed text-yellow-500"></span></h2>
                 <a class="cursor-pointer absolute bottom-10 hover:text-yellow-500" href="#sobre-el-evento">
                     <i class="text-4xl fa-solid fa-chevron-down"></i>
                 </a>
@@ -73,7 +75,7 @@
                     disfrutemos de lo hermoso de la tecnología, queremos que nos acompañes.
                 </p>
             </div>
-            <img class="md:w-2/4 mx-auto rounded-md" data-aos="fade-down" src="imagenes/virbela.jpg" alt="">
+            <img class="md:w-2/4 mx-auto rounded-md" data-aos="fade-down" src="imagenes/virbela.jpg" alt="Imagen representativa de Virbela">
         </section>
         <section id="detalles" class="relative h-full bg-slate-200 px-4 pt-5 text-center flex flex-col items-center gap-10 dark:bg-slate-700">
             <h3 class="text-3xl text-yellow-500 font-bold" data-aos="fade-down">
@@ -130,7 +132,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
                                                     dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
-                    <img class="w-full" src="imagenes/expositores/persona1.jpg" alt="" />                    
+                    <img class="w-full" src="imagenes/expositores/persona1.jpg" alt="Imagen de Gabriel Molina" />                    
                     <div class="p-5">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
                             Gabriel Molina
@@ -145,7 +147,7 @@
                 </article>
                 <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
                                                     dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
-                    <img class="w-full" src="imagenes/expositores/persona2.jpg" alt="" />                   
+                    <img class="w-full" src="imagenes/expositores/persona2.jpg" alt="Imagen de Jesús Nicolás Rios" />                   
                     <div class="p-5">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
                             Jesús Nicolás Rios
@@ -160,7 +162,7 @@
                 </article>
                 <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
                                                     dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
-                    <img class="w-full" src="imagenes/expositores/persona3.jpg" alt="" />                   
+                    <img class="w-full" src="imagenes/expositores/persona3.jpg" alt="Imagen de Cristian Ledesma" />                   
                     <div class="p-5">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
                             Cristian Ledesma
@@ -174,7 +176,7 @@
                 </article>
                 <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
                                                     dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
-                    <img class=" w-full" src="imagenes/expositores/persona4.jpg" alt="" />                   
+                    <img class=" w-full" src="imagenes/expositores/persona4.jpg" alt="Imagen de Julia Valles" />                   
                     <div class="p-5">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
                             Julia Valles
@@ -188,7 +190,7 @@
                 </article>
                 <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
                                                     dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
-                    <img class=" w-full" src="imagenes/expositores/persona5.jpg" alt="" />                   
+                    <img class=" w-full" src="imagenes/expositores/persona5.jpg" alt="Imagen de Justino Tradeo" />                   
                     <div class="p-5">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
                             Justino Tradeo
@@ -202,7 +204,7 @@
                 </article>
                 <article data-aos="fade-right" class="mx-auto w-72 mb-10 max-w-sm bg-white border border-gray-800 shadow-[5px_4px_0px_rgb(0,0,0)] 
                                                     dark:bg-slate-800 dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)] ">
-                    <img class=" w-full" src="imagenes/expositores/persona6.jpg" alt="" />                   
+                    <img class=" w-full" src="imagenes/expositores/persona6.jpg" alt="Imagen de Marisa Martinez" />                   
                     <div class="p-5">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-yellow-500">
                             Marisa Martinez
@@ -244,7 +246,7 @@
             <h4 class="text-center text-2xl mb-2 border-b-2 border-yellow-500 font-bold">Veni a conocernos!</h4>
             <iframe class="border rounded-md w-96 h-60 drop-shadow-xl" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.974952103117!2d-58.6556632!3d-34.579025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbea8a3be51a3%3A0xc73b187e245ea9fc!2sMagik!5e0!3m2!1ses!2sar!4v1683987502151!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>    
-        <a class="font-bold" href="index.html">
+        <a id="boton-volver" class="font-bold" href="#inicio">
             <div class="py-3 px-6 bg-white border border-slate-900 shadow-[5px_4px_0px_rgb(0,0,0)] 
                         dark:bg-slate-800 dark:text-white dark:border-white dark:shadow-[5px_4px_0px_rgb(255,255,255)]
                         active:shadow-[3px_2px_0px_rgb(0,0,0)] dark:active:shadow-[3px_2px_0px_rgb(255,255,255)]">
