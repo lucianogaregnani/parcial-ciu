@@ -34,7 +34,7 @@ function agregarImagenesDeFondo() {
     const seccionExpositores = document.getElementById('detalles')
     
     imagenes.forEach(({url, clases}) => {
-        seccionExpositores.innerHTML += `<img src="/imagenes/detalles-del-evento/${url}" class="${clases} absolute w-44 rounded-md">`
+        seccionExpositores.innerHTML += `<img src="imagenes/detalles-del-evento/${url}" class="${clases} absolute w-44 rounded-md">`
     })
 }
 
